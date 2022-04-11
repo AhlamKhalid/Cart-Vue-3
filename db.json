@@ -1,0 +1,32 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "img": "/src/assets/img/makeup.jpeg",
+      "name": "Red lipstick",
+      "price": 16,
+      "quantity": 2
+    },
+    {
+      "id": 2,
+      "img": "/src/assets/img/makeup.jpeg",
+      "name": "Red lipstick",
+      "price": 16,
+      "quantity": 1
+    },
+    {
+      "id": 3,
+      "img": "/src/assets/img/makeup.jpeg",
+      "name": "Red lipstick",
+      "price": 16,
+      "quantity": 1
+    },
+    {
+      "id": 4,
+      "img": "/src/assets/img/makeup.jpeg",
+      "name": "Red lipstick",
+      "price": 16,
+      "quantity": 1
+    }
+  ]
+}
