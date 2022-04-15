@@ -79,10 +79,12 @@ const hideCart = () => {
 const removeItem = async ($event) => {
   const productId = $event;
 
+  // update backend
   const response = await fetch(`http://localhost:5000/products/${productId}`, {
     method: "DELETE"
   });
 
+  // update UI
   products.value = products.value.filter((product) => product.id !== productId);
 };
 
@@ -165,12 +167,14 @@ const incrementQuantity = async ($event) => {
   products.value[productIndex].quantity = updatedProduct.quantity;
 };
 
+// fetch all products
 const fetchProducts = async () => {
   const response = await fetch("http://localhost:5000/products");
   const data = await response.json();
   return data;
 };
 
+// fetch single product
 const fetchProduct = async (productId) => {
   const response = await fetch(`http://localhost:5000/products/${productId}`);
   const data = await response.json();
